@@ -21,6 +21,6 @@
 	"PackageType": "Package",
 	"Url": "https://www.nuget.org/packages/UmbracoExternalStorageWithMongoDB",
 	"DiscussionForumUrl": "https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/issues",
-	"DocumentationUrl": "https://marketplace.umbraco.com/package/ExternalStorageWithMongoDB",
+	"DocumentationUrl": "https://marketplace.umbraco.com/package/UmbracoExternalStorageWithMongoDB",
 	"IssueTrackerUrl": "https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/issues"
 }
