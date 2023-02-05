@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
 	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <ContentTargetFolders>.</ContentTargetFolders>
     <Product>UmbracoExternalStorageWithMongoDB</Product>
@@ -20,8 +20,8 @@
 		<None Include="LICENSE" Pack="true" PackagePath="" />
 	</ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.4.0" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.4.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="11.1.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="11.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,7 +30,7 @@
   </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
-		<PackageReference Include="UmbracoMongoDbClient" Version="7.1.0" />
+		<PackageReference Include="UmbracoMongoDbClient" Version="11.1.1" />
 	</ItemGroup>
 	<PropertyGroup>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
