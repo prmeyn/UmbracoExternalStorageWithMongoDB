@@ -1,0 +1,26 @@
+{
+	"$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+	"Title": "ExternalStorageWithMongoDB",
+	"AddOnPackagesRequiredForUmbracoCloud": [],
+	"AlternatePackageNames": [ "MongoDB Storage NoSQL" ],
+	"AuthorDetails": {
+		"SyncContributorsFromRepository": true,
+		"Name": "Prashansa Meyn",
+		"Url": "https://github.com/sponsors/prmeyn"
+	},
+	"Screenshots": [
+		{
+			"ImageUrl": "https://raw.githubusercontent.com/prmeyn/UmbracoExternalStorageWithMongoDB/main/images/multicloud.png",
+			"Caption": "MongoDB has a free multicloud offering called Atlas"
+		}
+	],
+	"Category": "Developer Tools",
+	"Description": "Allows your Umbraco website to store external data in a NoSQL high performing MongoDB database server",
+	"LicenseTypes": [ "Free" ],
+	"LicenseType": "Free",
+	"PackageType": "Package",
+	"Url": "https://www.nuget.org/packages/UmbracoExternalStorageWithMongoDB",
+	"DiscussionForumUrl": "https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/issues",
+	"DocumentationUrl": "https://marketplace.umbraco.com/package/ExternalStorageWithMongoDB",
+	"IssueTrackerUrl": "https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/issues"
+}

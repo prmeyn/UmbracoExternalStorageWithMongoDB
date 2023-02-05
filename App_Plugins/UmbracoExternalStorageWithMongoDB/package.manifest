@@ -1,0 +1,5 @@
+﻿{
+    "name": "UmbracoExternalStorageWithMongoDB",
+    "version": "10.1.0",
+    "allowPackageTelemetry": true
+}

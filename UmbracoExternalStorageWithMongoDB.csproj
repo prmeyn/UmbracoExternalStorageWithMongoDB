@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>UmbracoExternalStorageWithMongoDB</Product>
+    <PackageId>UmbracoExternalStorageWithMongoDB</PackageId>
+	<PackageProjectUrl>https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/</PackageProjectUrl>
+	<Description>
+		This package allows you to store your custom data in a NoSQL MongoDB database.
+		Unlike most NoSQL databases, a MomgoDB server can be installed on almost any platform, your laptop or on a Cloud service like AWS, GCP or Azure. It avoids vendor lock in into any specific hosting platform.
+	</Description>
+    <PackageTags>umbraco plugin package umbraco-marketplace</PackageTags>
+  </PropertyGroup>
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.4.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\UmbracoExternalStorageWithMongoDB\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+		<PackageReference Include="UmbracoMongoDbClient" Version="7.1.0" />
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="images\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <UmbracoExternalStorageWithMongoDBContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\UmbracoExternalStorageWithMongoDB\**\*.*</UmbracoExternalStorageWithMongoDBContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopyUmbracoExternalStorageWithMongoDBAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <UmbracoExternalStorageWithMongoDBContentFiles Include="$(UmbracoExternalStorageWithMongoDBContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying UmbracoExternalStorageWithMongoDB files: $(UmbracoExternalStorageWithMongoDBContentFilesPath) - #@(UmbracoExternalStorageWithMongoDBContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(UmbracoExternalStorageWithMongoDBContentFiles)" DestinationFiles="@(UmbracoExternalStorageWithMongoDBContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\UmbracoExternalStorageWithMongoDB\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearUmbracoExternalStorageWithMongoDBAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <UmbracoExternalStorageWithMongoDBDir Include="$(MSBuildProjectDirectory)\App_Plugins\UmbracoExternalStorageWithMongoDB\" />
+    </ItemGroup>
+    <Message Text="Clear old UmbracoExternalStorageWithMongoDB data" Importance="high" />
+    <RemoveDir Directories="@(UmbracoExternalStorageWithMongoDBDir)" />
+  </Target>
+</Project>

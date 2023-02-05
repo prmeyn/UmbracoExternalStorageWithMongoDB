@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExternalStorageWithMongoDB", "UmbracoExternalStorageWithMongoDB.csproj", "{C1185822-0132-485D-A351-3A5C47B2CA97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{BAA65706-A753-4B0D-9B39-A521A8D54B24}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+		.github\workflows\release.yml = .github\workflows\release.yml
+		umbraco-marketplace.json = umbraco-marketplace.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1185822-0132-485D-A351-3A5C47B2CA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1185822-0132-485D-A351-3A5C47B2CA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1185822-0132-485D-A351-3A5C47B2CA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1185822-0132-485D-A351-3A5C47B2CA97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7CECA60-8D3A-4FA2-B229-27F219A2239B}
+	EndGlobalSection
+EndGlobal
