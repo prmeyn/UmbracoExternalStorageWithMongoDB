@@ -1,14 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <ContentTargetFolders>.</ContentTargetFolders>
+    <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
     <Product>UmbracoExternalStorageWithMongoDB</Product>
     <PackageId>UmbracoExternalStorageWithMongoDB</PackageId>
 	<PackageProjectUrl>https://github.com/prmeyn/UmbracoExternalStorageWithMongoDB/</PackageProjectUrl>
 	<Description>
-		This package allows you to store your custom data in a NoSQL MongoDB database.
-		Unlike most NoSQL databases, a MomgoDB server can be installed on almost any platform, your laptop or on a Cloud service like AWS, GCP or Azure. It avoids vendor lock in into any specific hosting platform.
+		This package allows you to store your custom data in a NoSQL MongoDB database from Umbraco 17, using MongoDbService.
+		Unlike most NoSQL databases, a MongoDB server can be installed on almost any platform, your laptop or on a Cloud service like AWS, GCP or Azure. It avoids vendor lock in into any specific hosting platform.
 	</Description>
     <PackageTags>umbraco plugin package umbraco-marketplace</PackageTags>
   </PropertyGroup>
@@ -18,19 +18,15 @@
 
 	<ItemGroup>
 		<None Include="LICENSE" Pack="true" PackagePath="" />
+		<Content Update="umbraco-marketplace.json" Pack="false" />
 	</ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="13.0.1" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="13.0.1" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="[17.0.0, 18.0.0)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="App_Plugins\UmbracoExternalStorageWithMongoDB\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
-    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
-  </ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-		<PackageReference Include="UmbracoMongoDbClient" Version="13.0.0" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
+		<PackageReference Include="MongoDbService" Version="10.3.1" />
 	</ItemGroup>
 	<PropertyGroup>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
