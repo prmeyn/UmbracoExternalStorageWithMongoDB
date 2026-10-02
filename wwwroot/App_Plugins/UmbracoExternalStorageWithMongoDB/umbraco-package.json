@@ -1,7 +1,6 @@
 {
     "name": "UmbracoExternalStorageWithMongoDB",
     "id": "UmbracoExternalStorageWithMongoDB",
-    "version": "17.0.0",
     "allowTelemetry": true,
     "extensions": []
 }
